@@ -1,0 +1,149 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel Angek Banda Rojas</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2e;
+      --text:#e8eefc;
+      --muted:#a7b2d6;
+      --accent:#6aa6ff;
+      --border:rgba(255,255,255,.10);
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(106,166,255,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 30%, rgba(60,255,203,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px;}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:18px; background:rgba(255,255,255,.03); border:1px solid var(--border);
+      border-radius:14px;
+    }
+    .brand h1{margin:0; font-size:20px;}
+    .brand p{margin:6px 0 0; color:var(--muted); font-size:14px;}
+    nav a{
+      color:var(--muted); text-decoration:none; margin-left:14px; font-size:14px;
+    }
+    nav a:hover{color:var(--text);}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      margin-top:16px;
+    }
+    @media (max-width: 860px){ .grid{grid-template-columns:1fr;} }
+
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:18px;
+    }
+    h2{margin:0 0 10px; font-size:18px;}
+    .muted{color:var(--muted); line-height:1.6;}
+    ul{margin:10px 0 0; padding-left:18px;}
+    li{margin:6px 0; color:var(--muted);}
+
+    .btns{margin-top:14px; display:flex; flex-wrap:wrap; gap:10px;}
+    .btn{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      color:var(--text);
+      background:rgba(106,166,255,.12);
+      text-decoration:none;
+      font-size:14px;
+    }
+    .btn.secondary{background:transparent;}
+    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Miguel Angek Banda Rojas</h1>
+        <p>Business Administration • Business Analytics • Operations & Finance</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <section class="card" id="about">
+        <h2>About</h2>
+        <p class="muted">
+          I studied <strong>Business Administration</strong> and am currently pursuing a
+          <strong>Bachelor of Business Administration</strong> with an emphasis in
+          <strong>Business Analytics</strong> at <strong>Pacific States University</strong>.
+        </p>
+        <p class="muted">
+          I have a strong interest in <strong>operations</strong> and <strong>finance</strong>, and
+          I’m passionate about using <strong>data-driven insights</strong> to improve business efficiency
+          and support sound financial decision-making.
+        </p>
+
+        <div class="btns">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn secondary" href="YOUR_RESUME_LINK_HERE" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </section>
+
+      <aside class="card" id="interests">
+        <h2>Focus</h2>
+        <p class="muted">My goal is to apply analytical tools and strategic thinking to:</p>
+        <ul>
+          <li>Optimize operations</li>
+          <li>Drive financial performance</li>
+          <li>Support data-informed decisions</li>
+        </ul>
+        <h2 style="margin-top:16px;">Key Areas</h2>
+        <ul>
+          <li>Operations Optimization</li>
+          <li>Finance & Financial Analysis</li>
+          <li>Business Analytics</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="card" id="contact" style="margin-top:16px;">
+      <h2>Contact</h2>
+      <p class="muted">
+        Replace the links below with your real info:
+      </p>
+      <div class="btns">
+        <a class="btn" href="mailto:your-email@example.com">your-email@example.com</a>
+        <a class="btn secondary" href="YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="YOUR_PORTFOLIO_URL_HERE" target="_blank" rel="noreferrer">Portfolio</a>
+        <a class="btn secondary" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Miguel Angek Banda Rojas
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
+
+If you tell me your GitHub profile link/username, I can fill the contact links and create a matching `README` + `index` structure for GitHub Pages.
